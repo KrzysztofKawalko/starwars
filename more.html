@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- mój css -->
+    <link rel="stylesheet" href="css/moj.css">
+    <!-- Lightbox css -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-moj">
+                <span class="navbar-brand">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Star_Wars_Logo_2.svg" height="50" class="d-inline-block align-top" alt="">
+                </span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="more.html">Więcej o GW <span class="sr-only">(current)</span></a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="gallery.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    
+    <!-- main -->
+    <main class="container">
+      <div class="row">
+
+        <!-- sekcja główna -->
+        <section class="col-sm-8">
+          <h1 class="main-title">Więcej o Gwiezdnych Wojnach</h1>
+          <h6 class="undertitle">Wybierz epizod:</h6>
+            <!-- accordion -->
+            <div id="accordion" role="tablist">
+                <!-- EP1 -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEP1">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEP1" role="button" aria-expanded="false" aria-controls="collapseEP1">
+                            Epizod I: Mroczne widmo
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseEP1" class="collapse" role="tabpanel" aria-labelledby="headingEP1" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Star-wars-episode-i---the-phantom-menace.png"><br>
+                          Gwiezdne wojny, część I: Mroczne widmo (ang. Star Wars Episode I: The Phantom Menace) – chronologicznie pierwsza część sagi Gwiezdne wojny, powstała w 1999 roku jako czwarty z kolei film. Jej reżyserem jest George Lucas. Film opowiada o dzieciństwie Anakina Skywalkera, przyszłego Dartha Vadera. 10 lutego 2012 do polskich kin trafiła wersja w 3D.<br/>Serwis Rotten Tomatoes przyznał mu wynik 57%.
+                          <p style="text-align: right;"><a target="_blank" href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny:_cz%C4%99%C5%9B%C4%87_I_%E2%80%93_Mroczne_widmo">Więcej na Wikipedii <i class="fas fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- EP2 -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEP2">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEP2" role="button" aria-expanded="false" aria-controls="collapseEP2">
+                            Epizod II: Atak klonów
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseEP2" class="collapse" role="tabpanel" aria-labelledby="headingEP2" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Sw-ep2-logo.png"><br>
+                          Gwiezdne wojny, część II: Atak klonów (ang. Star Wars Episode II: Attack of the Clones) – chronologicznie druga część sagi Gwiezdne wojny, powstała jako piąta w roku 2002. Jej reżyserem jest George Lucas. Film opowiada o młodzieńczych latach Anakina Skywalkera, przyszłego Dartha Vadera. Akcja filmu dzieje się 10 lat później od wydarzeń ukazanych w filmie Gwiezdne wojny: część I – Mroczne widmo i 22 lata wcześniej od wydarzeń z filmu Gwiezdne wojny: część IV - Nowa nadzieja.<br/>W serwisie Rotten Tomatoes uzyskał wynik 67%.
+                          <p style="text-align: right;"><a target="_blank" href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny:_cz%C4%99%C5%9B%C4%87_II_%E2%80%93_Atak_klon%C3%B3w">Więcej na Wikipedii <i class="fas fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                </div>
+                
+                <!-- EP3 -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEP3">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEP3" role="button" aria-expanded="false" aria-controls="collapseEP3">
+                            Epizod III: Zemsta Sithów
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseEP3" class="collapse" role="tabpanel" aria-labelledby="headingEP3" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Revengeofthesith-logo.svg/512px-Revengeofthesith-logo.svg.png"><br>
+                          Gwiezdne wojny: część III – Zemsta Sithów (ang. Star Wars Episode III: Revenge of the Sith) – chronologicznie trzecia część sagi Gwiezdne wojny, powstała jako szósta w 2005 roku. Jej reżyserem jest George Lucas. Na podstawie filmu powstała gra: Star Wars: Episode III. 11 października 2013 film miał wrócić do kin, twórcy jednak zmienili zdanie i postanowili skupić się na VII części Gwiezdnych Wojen.<br/>Serwis Rotten Tomatoes przyznał filmowi wynik 80%.
+                          <p style="text-align: right;"><a target="_blank" href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny:_cz%C4%99%C5%9B%C4%87_III_%E2%80%93_Zemsta_Sith%C3%B3w">Więcej na Wikipedii <i class="fas fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- EP4 -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEP4">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEP4" role="button" aria-expanded="false" aria-controls="collapseEP4">
+                            Epizod IV: Nowa nadzieja
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseEP4" class="collapse" role="tabpanel" aria-labelledby="headingEP4" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Star_wars_1977_us.svg/286px-Star_wars_1977_us.svg.png"><br>
+                          Gwiezdne wojny, część IV: Nowa nadzieja (ang. Star Wars Episode IV: A New Hope) – chronologicznie czwarty (w kolejności powstawania – pierwszy) film z cyklu Gwiezdne wojny wyreżyserowany przez George’a Lucasa w 1977 roku pod tytułem Gwiezdne wojny, bez żadnych epizodów i podtytułów (podtytuł „Nowa nadzieja” został dodany 10 kwietnia 1981, w nowym wydaniu filmu); opowiada o młodym Luke’u Skywalkerze, który – podobnie jak ojciec – chce zostać rycerzem Jedi.<br/>W serwisie Rotten Tomatoes film uzyskał 93% pozytywnych recenzji.
+                          <p style="text-align: right;"><a target="_blank" href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny:_cz%C4%99%C5%9B%C4%87_IV_%E2%80%93_Nowa_nadzieja">Więcej na Wikipedii <i class="fas fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- EP5 -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEP5">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEP5" role="button" aria-expanded="false" aria-controls="collapseEP5">
+                            Epizod V: Imperium kontratakuje
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseEP5" class="collapse" role="tabpanel" aria-labelledby="headingEP5" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Empirestrikesback2.png"><br>
+                          Gwiezdne wojny, część V: Imperium kontratakuje (ang. Star Wars Episode V: The Empire Strikes Back) – chronologicznie piąta część sagi Gwiezdne wojny, powstała jako druga w 1980 roku; wyreżyserowana przez Irvina Kershnera.<br/>Akcja filmu dzieje się 3 lata po wydarzeniach ukazanych w filmie Gwiezdne wojny: część IV – Nowa nadzieja, 22 lata później niż akcja filmu Gwiezdne wojny: część III – Zemsta Sithów, 25 lat po Ataku klonów i po upływie 35 lat od wydarzeń z filmu Gwiezdne wojny: część I – Mroczne widmo.
+                          <p style="text-align: right;"><a target="_blank" href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny:_cz%C4%99%C5%9B%C4%87_V_%E2%80%93_Imperium_kontratakuje">Więcej na Wikipedii <i class="fas fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- EP6 -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEP6">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEP6" role="button" aria-expanded="false" aria-controls="collapseEP6">
+                            Epizod VI: Powrót Jedi
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseEP6" class="collapse" role="tabpanel" aria-labelledby="headingEP6" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Return_of_the_jedi_logo.png"><br>
+                          Gwiezdne wojny, część VI: Powrót Jedi (ang. Star Wars Episode VI: Return of the Jedi) – chronologicznie szósta część sagi Gwiezdne wojny, powstała jako trzecia w 1983 roku. Film skupia się na ostatecznej rozgrywce między Lukiem Skywalkerem i Darthem Vaderem oraz między Rebelią i Imperium.<br/>Reżyserem tej części był Richard Marquand, a występują w niej m.in. Mark Hamill (Luke Skywalker), Carrie Fisher (Leia Organa), Harrison Ford (Han Solo).<br/>W serwisie Rotten Tomatoes film uzyskał wynik 79% z 191 recenzji.
+                          <p style="text-align: right;"><a target="_blank" href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny:_cz%C4%99%C5%9B%C4%87_VI_%E2%80%93_Powr%C3%B3t_Jedi">Więcej na Wikipedii <i class="fas fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- EP7 -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEP7">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEP7" role="button" aria-expanded="false" aria-controls="collapseEP7">
+                            Epizod VII: Przebudzenie Mocy
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseEP7" class="collapse" role="tabpanel" aria-labelledby="headingEP7" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Gwiezdne_wojny_-_Przebudzenie_Mocy_logo.png"><br>
+                          Gwiezdne wojny: Przebudzenie Mocy (ang. Star Wars: The Force Awakens), tytuł alt. Gwiezdne wojny: część VII – Przebudzenie Mocy – amerykański film z gatunku space opera w reżyserii J.J. Abramsa, którego uroczysta premiera miała miejsce 14 grudnia 2015 roku, a do dystrybucji kinowej trafił cztery dni później. Jest to siódma odsłona serii filmów Gwiezdne wojny. W rolach głównych występują Daisy Ridley, John Boyega, Adam Driver, Oscar Isaac, Andy Serkis, Domhnall Gleeson i Max von Sydow. Harrison Ford, Carrie Fisher, Mark Hamill, Anthony Daniels, Peter Mayhew i Kenny Baker ponownie wcielają się w role z poprzednich filmów. Akcja filmu rozgrywa się około 30 lat po wydarzeniach z Powrotu Jedi i koncentruje się na losach trójki nowych głównych bohaterów.
+                          <p style="text-align: right;"><a target="_blank" href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny:_Przebudzenie_Mocy">Więcej na Wikipedii <i class="fas fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- EP8 -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEP8">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEP8" role="button" aria-expanded="false" aria-controls="collapseEP8">
+                            Epizod VIII: Ostatni Jedi
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseEP8" class="collapse" role="tabpanel" aria-labelledby="headingEP8" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Star_Wars_TLJ-Polish_Logo-Ostatni_Jedi.png"><br>
+                          Gwiezdne wojny: Ostatni Jedi (ang.: Star Wars: The Last Jedi) – amerykański film z gatunku space opera w reżyserii Riana Johnsona, który do kin w USA trafił 15 grudnia 2017 roku (w Polsce 14 grudnia). Jest to ósma część cyklu Gwiezdne wojny, bezpośrednia kontynuacja Przebudzenia Mocy z 2015 roku. W rolach głównych występują Daisy Ridley, John Boyega, Adam Driver, Oscar Isaac, Andy Serkis, Domhnall Gleeson, Gwendoline Christie, Carrie Fisher oraz Mark Hamill. Zdjęcia do filmu trwały od września 2015 do lipca 2016 roku, realizowane były między innymi w Irlandii oraz Chorwacji.
+                          <p style="text-align: right;"><a target="_blank" href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny:_Ostatni_Jedi">Więcej na Wikipedii <i class="fas fa-angle-double-right"></i></a></p>
+                      </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <!-- #accordion -->
+        </section>
+        <!-- #sekcja główna -->
+
+        <!-- menu boczne -->
+        <section class="col-sm-4">
+          <div class="linki">
+          <p>Przydatne linki:</p>
+          <p>
+            <a href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny" target="_blank" title="Wikipedia"><i class="fas fa-angle-right"></i> Wikipedia</a><br/>
+            <a href="https://star-wars.pl/" target="_blank" title="Bastion"><i class="fas fa-angle-right"></i> Bastion Polskich Fanów Star Wars</a><br/>
+            <a href="https://starwars.pl/" target="_blank" title="starwars.pl"><i class="fas fa-angle-right"></i> starwars.pl</a><br/>
+            <a href="https://www.lego.com/pl-pl/starwars" target="_blank" title="Lego"><i class="fas fa-angle-right"></i> Lego Gwiezdne Wojny</a><br/>
+            <a href="http://www.starwars.com/" target="_blank" title="Official"><i class="fas fa-angle-right"></i> starwars.com</a><br/>
+          </p>
+        </div>
+        </section>
+        <!-- #menu boczne -->
+
+         
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col stopka">
+            <p>Napisz do nas: gwiezdne@wojny.pl</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap scripts -->
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!-- Mój JavaScript -->
+    <script src="js/moj.js"></script>
+    <!-- Lightbox -->
+    <script src="js/lightbox.min.js"></script>
+
+</body>
+</html>

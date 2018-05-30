@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- mój css -->
+    <link rel="stylesheet" href="css/moj.css">
+    <!-- Lightbox css -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-moj">
+                <span class="navbar-brand">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Star_Wars_Logo_2.svg" height="50" class="d-inline-block align-top" alt="">
+                </span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="more.html">Więcej o SW</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="gallery.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="contact.html">Kontakt <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    
+    <!-- main -->
+    <main class="container">
+      <div class="row">
+
+        <!-- sekcja główna -->
+        <section class="col-sm-8">
+          <h1 class="main-title">Formularz kontaktowy</h1>
+            <!-- form -->
+            <form action="#" id="myForm">
+              <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
+              <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
+              <select name="your-subject" data-error="Wybierz temat wiadomości">
+                  <option value="" disabled selected>- Temat wiadomości -</option>
+                  <option value="pytanie">Pytanie</option>
+                  <option value="propozycja">Propozycja</option>
+                  <option value="inne">Inne</option>
+              </select>
+              <textarea name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości"></textarea>
+  
+              <button type="submit">Wyślij</button>
+            </form>
+            <!-- #form -->
+        </section>
+        <!-- #sekcja główna -->
+
+        <!-- menu boczne -->
+        <section class="col-sm-4">
+            <div class="linki">
+            <p>Przydatne linki:</p>
+            <p>
+              <a href="https://pl.wikipedia.org/wiki/Gwiezdne_wojny" target="_blank" title="Wikipedia"><i class="fas fa-angle-right"></i> Wikipedia</a><br/>
+              <a href="https://star-wars.pl/" target="_blank" title="Bastion"><i class="fas fa-angle-right"></i> Bastion Polskich Fanów Star Wars</a><br/>
+              <a href="https://starwars.pl/" target="_blank" title="starwars.pl"><i class="fas fa-angle-right"></i> starwars.pl</a><br/>
+              <a href="https://www.lego.com/pl-pl/starwars" target="_blank" title="Lego"><i class="fas fa-angle-right"></i> Lego Gwiezdne Wojny</a><br/>
+              <a href="http://www.starwars.com/" target="_blank" title="Official"><i class="fas fa-angle-right"></i> starwars.com</a><br/>
+            </p>
+          </div>
+          </section>
+          <!-- #menu boczne -->
+
+         
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col stopka">
+              <p>Napisz do nas: gwiezdne@wojny.pl</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- bootstrap scripts -->
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!-- Mój JavaScript -->
+    <script src="js/moj.js"></script>
+    <!-- Lightbox -->
+    <script src="js/lightbox.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+header {
+    margin-bottom: 4.75em;
+}
+
+.navbar-moj {
+    background: #000;
+}
+
+.main-title {
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+}
+
+.undertitle {
+    margin-bottom: 1em;
+}
+
+/* carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    text-shadow: 0 0 3px black;
+}
+
+/* linki */
+.linki {
+    text-align: left;
+    margin-top: 2em;
+}
+
+.linki ol ul{
+    text-align: left;
+}
+
+/* stopka */
+footer {
+    margin-top: 2em;
+}
+
+.stopka {
+    width: 100%;
+    background: #000;
+    color: #7f7f7f;
+    text-align: center;
+}
+
+.stopka p {
+    margin-top: 1em;
+}
+
+
+/* accordion */
+.card-body img {
+    width: 50%;
+    padding-bottom: 1em;
+}
+
+
+/* gallery */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Form */
+ul.errors {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #FFD4DE;
+}
+
+ul.errors li {
+    list-style: none;
+    line-height: 30px;
+    color: #F70053;
+}
+
+form {
+    width: 100%;
+    overflow: hidden;
+}
+
+form * {
+    box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="email"],
+select,
+textarea {
+    border: 1px #C5C5C5 solid;
+    background: #fff;
+
+    font: 14px/35px Tahoma, Arial, sans-serif;
+    color: #8A8A8A;
+}
+
+form input[type="text"].error,
+form input[type="email"].error,
+select.error,
+textarea.error {
+    border-color: #FFA9C7;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    margin: 0 20px 20px 0;
+}
+
+form select {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin: 0 20px 20px 0;
+}
+
+form textarea {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px 0 15px;
+    margin-bottom: 20px;
+    resize: none;
+    line-height: 22px;
+}
+
+form button[type='submit'] {
+    padding: 0 30px;
+    height: 40px;
+    border: none;
+    background: #00C2F1;
+    cursor: pointer;
+    font: 14px/35px Tahoma, Arial, sans-serif;
+    color: #00566B;
+}
