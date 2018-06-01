@@ -46,25 +46,80 @@
     <!-- main -->
     <main class="container">
       <div class="row">
-
         <!-- sekcja główna -->
         <section class="col-sm-8">
           <h1 class="main-title">Formularz kontaktowy</h1>
             <!-- form -->
-            <form action="#" id="myForm">
-              <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
-              <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
-              <select name="your-subject" data-error="Wybierz temat wiadomości">
-                  <option value="" disabled selected>- Temat wiadomości -</option>
-                  <option value="pytanie">Pytanie</option>
-                  <option value="propozycja">Propozycja</option>
-                  <option value="inne">Inne</option>
-              </select>
-              <textarea name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości"></textarea>
-  
-              <button type="submit">Wyślij</button>
+            <form id="formularz" method="post" action="">
+              <!-- imię -->
+              <div class="form-group">
+                  <label for="name">Imię:</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Podaj imię lub nick"></input>
+                  <span class="komunikat"></span>
+              </div>
+              <!-- wiadomosc -->
+              <div class="form-group">
+                  <label for="message">Wiadomość*:</label>
+                  <textarea id="message" class="form-control" name="message" placeholder="Wpisz wiadomość"></textarea>
+                  <span class="komunikat"></span>                                               
+              </div>
+              <!-- email -->
+              <div class="form-group">
+                  <label for="email">Email*:</label>
+                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Wpisz swój adres email"></input>
+                  <span class="komunikat"></span>        
+              </div>
+              <!-- radio - glosowanie -->
+              <p style="margin-bottom: -1em;">Która część Gwiezdnych Wojen jest twoją ulubioną?</p>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="czesc-I" value="option1">
+                  <label class="form-check-label" for="czesc-I">I</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="czesc-II" value="option2">
+                  <label class="form-check-label" for="czesc-II">II</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="czesc-III" value="option3">
+                  <label class="form-check-label" for="czesc-III">III</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="czesc-IV" value="option4">
+                  <label class="form-check-label" for="czesc-IV">IV</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="czesc-V" value="option5">
+                  <label class="form-check-label" for="czesc-V">I</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="czesc-VI" value="option6">
+                  <label class="form-check-label" for="czesc-VI">VI</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="czesc-VII" value="option7">
+                  <label class="form-check-label" for="czesc-VII">VII</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="czesc-VIII" value="option8">
+                  <label class="form-check-label" for="czesc-VIII">VIII</label>
+              </div>
+              <p></p>
+              <!-- newsletter -->
+              <div class="form-group">
+                  <input type="checkbox" id="check" required></input>
+                  <label for="check">Chcę otrzymywać newsletter</label>
+                  <span class="komunikat"></span>
+              </div>
+              <p></p>
+              <!-- button wyślij -->
+              <div id="submit">             
+                  <button type="submit" class="btn btn-primary">Wyślij</button>
+              </div>
             </form>
             <!-- #form -->
+            <p>* - pola obowiązkowe</p>
+ 
+            
         </section>
         <!-- #sekcja główna -->
 

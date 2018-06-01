@@ -102,82 +102,23 @@ footer {
 
 
 /* Form */
-ul.errors {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 30px;
-    background-color: #FFD4DE;
+
+#formularz div{
+	margin-top: 1em;		
 }
-
-ul.errors li {
-    list-style: none;
-    line-height: 30px;
-    color: #F70053;
+ 
+input.invalid, textarea.invalid{
+    border: 3px solid red;
 }
-
-form {
-    width: 100%;
-    overflow: hidden;
+ 
+input.valid, textarea.valid{
+    border: 3px solid green;
 }
-
-form * {
-    box-sizing: border-box;
+ 
+.blad {
+	color: red;	
 }
-
-form input[type="text"],
-form input[type="email"],
-select,
-textarea {
-    border: 1px #C5C5C5 solid;
-    background: #fff;
-
-    font: 14px/35px Tahoma, Arial, sans-serif;
-    color: #8A8A8A;
-}
-
-form input[type="text"].error,
-form input[type="email"].error,
-select.error,
-textarea.error {
-    border-color: #FFA9C7;
-}
-
-form input[type="text"],
-form input[type="email"] {
-    display: block;
-    width: 100%;
-    height: 35px;
-    padding: 0 15px;
-    margin: 0 20px 20px 0;
-}
-
-form select {
-    width: 100%;
-    height: 35px;
-    padding: 0 15px;
-    border-radius: 0;
-    -webkit-appearance: none;
-    cursor: pointer;
-    margin: 0 20px 20px 0;
-}
-
-form textarea {
-    clear: both;
-    display: block;
-    width: 100%;
-    height: 150px;
-    padding: 10px 15px 0 15px;
-    margin-bottom: 20px;
-    resize: none;
-    line-height: 22px;
-}
-
-form button[type='submit'] {
-    padding: 0 30px;
-    height: 40px;
-    border: none;
-    background: #00C2F1;
-    cursor: pointer;
-    font: 14px/35px Tahoma, Arial, sans-serif;
-    color: #00566B;
+ 
+.ok {
+	color: green;	
 }

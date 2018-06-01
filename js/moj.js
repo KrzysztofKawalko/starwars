@@ -2,91 +2,54 @@
 
 (function() {
 
-    var form = document.querySelector("#myForm"),
-        fields = form.querySelectorAll("[data-error]");
-    
-    function isNotEmpty(field) {
-    
-        return field.value !== "";
-    
-    }
-    
-    function isAtLeast(field, min) {
-    
-        return field.value.length >= min;
-    
-    }
-    
-    function isEmail(field) {
-    
-        return field.value.indexOf("@") !== -1;
-    
-    }
-    
-    function displayErrors(errors) {
-    
-        var ul = document.querySelector("ul.errors");
-    
-        if(!ul) {
-            ul = document.createElement("ul");
-    
-            ul.classList.add("errors");
-        }
-    
-        ul.innerHTML = "";
-    
-        errors.forEach(function(error) {
-    
-            var li = document.createElement("li");
-    
-            li.textContent = error;
-    
-            ul.appendChild(li);
-    
+    $(document).ready(function() {
+
+        //walidacja pola email
+        $('#email').on('blur', function() {
+            var input = $(this);
+            var pattern = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+            var is_email = pattern.test(input.val());
+            if(is_email){
+                input.removeClass("invalid").addClass("valid");
+                input.next('.komunikat').text("OK").removeClass("blad").addClass("ok");
+            }
+            else{
+                input.removeClass("valid").addClass("invalid");
+                input.next('.komunikat').text("Wprowadź poprawny email!").removeClass("ok").addClass("blad");
+            }
         });
     
-        form.parentNode.insertBefore(ul, form);
-    
-    }
-    
-    form.addEventListener("submit", function(e) {
-    
-        e.preventDefault();
-    
-        var errors = [];
-    
-        for(var i = 0; i < fields.length; i++) {
-    
-            var field = fields[i],
-                isValid = false;
-    
-            if(field.type === "text") {
-                isValid = isNotEmpty(field);
-            } else if(field.type === "email") {
-                isValid = isEmail(field);
-            } else if(field.type === "select-one") {
-                isValid = isNotEmpty(field);
-            } else if(field.type === "textarea") {
-                isValid = isAtLeast(field, 2);
+        //walidacja pola Wiadomość
+        $('#message').on('blur', function() {
+            var input = $(this);
+            var message = $(this).val();
+            if(message){
+                input.removeClass("invalid").addClass("valid");
+                input.next('.komunikat').text("OK").removeClass("blad").addClass("ok");
             }
-    
-            if(!isValid) {
-                field.classList.add("error");
-                errors.push(field.dataset.error);
-            } else {
-                field.classList.remove("error");
+            else{
+                input.removeClass("valid").addClass("invalid");
+                input.next('.komunikat').text("Wiadomość nie może być pusta!").removeClass("ok").addClass("blad");
+            }   
+        });
+          
+        //blokowanie możliwości wysyłki pustego/żle wypełnionego formularza
+        $('#submit button').click(function(event){
+            
+            var email = $('#email');
+            var message = $('#message');
+            
+            if(email.hasClass('valid') && message.hasClass('valid')){
+                alert("Pomyślnie wysłano formularz.");	
             }
-    
-        }
-    
-        if(errors.length) {
-            displayErrors(errors);
-        } else {
-            form.submit();
-        }
-    
-        console.log(errors);
-    
-    }, false);
+            else {
+                event.preventDefault();
+                alert("Uzupełnij wszystkie pola!");	
+            }
+        });
+
+        
+     
+    });
     
     })();
